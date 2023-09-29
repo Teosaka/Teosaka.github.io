@@ -8,7 +8,7 @@
   }
 
   function test() {
-    window.location.href = '/C4.html';
+    window.location.href = 'public/C4.html';
   }
 
 
