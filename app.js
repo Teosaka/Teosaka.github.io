@@ -10,10 +10,8 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(multer().none());
 
-app.get('/test', async(req, res) => {
-  console.log('hi');
-});
-
 app.use(express.static('public'));
-const PORT = process.env.PORT || DEFAULT_JS_LINTER_HATES_NUMBERS_PORT;
-app.listen(PORT);
+const PORT = 8000;
+app.listen(PORT, function() {
+  console.log('Express server listening on 8000')
+});

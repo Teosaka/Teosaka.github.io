@@ -1,0 +1,40 @@
+#board {
+  display: flex;
+  flex-direction: row;
+  border-color: black;
+  border-style: solid;
+}
+
+.column {
+  background-color: blue;
+  height: 90vw;
+}
+
+.spot {
+  display: flex;
+  height: 15vw;
+  width: 14.122vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  height: 10vw;
+  width: 10vw;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#winBox {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 55vw;
+  height: 30vw;
+  z-index: 100;
+  padding: 200px;
+  background-color: white;
+}

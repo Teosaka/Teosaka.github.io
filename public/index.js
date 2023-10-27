@@ -5,11 +5,12 @@
 
   function init() {
     document.getElementById('btn').addEventListener('click', test);
+    console.log('hi');
   }
 
   function test() {
-    window.location.href = 'public/C4.html';
+    location.href = 'C4.html';
   }
 
 
-});
+})();
