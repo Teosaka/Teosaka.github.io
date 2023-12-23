@@ -4,10 +4,11 @@
   let invisBoard = Array(7);
   let Yturn = true;
 
-  window.addEventListener('load', c4init);
+  window.addEventListener('load', init);
   window.addEventListener('load', createBoard);
 
-  function c4init() {
+  function init() {
+    document.getElementById('back').addEventListener('click', backHome)
     let board = document.getElementById('board');
     for(let i = 0; i < 7; i++){
       let column = document.createElement('div');
@@ -26,6 +27,10 @@
       //column.id = i.toString();
       board.appendChild(column);
     }
+  }
+
+  function backHome() {
+    location.href = "/index.html"
   }
 
   function createBoard() {
@@ -63,8 +68,18 @@
         document.getElementById(col + index.toString()).style.backgroundColor = 'red';
         Yturn = true;
       }
+      changeTurn();
     }
     checkWinner();
+  }
+
+  function changeTurn() {
+    turn = document.getElementById('turn');
+    if (Yturn) {
+      turn.textContent = "Yellow's Turn";
+    } else {
+      turn.textContent = "Red's Turn";
+    }
   }
 
   function checkWinner() {

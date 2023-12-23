@@ -1,3 +1,7 @@
-body {
-  background-color: blue;
+#Log {
+  display: none;
+}
+
+#Riot {
+  display: none;
 }
