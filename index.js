@@ -13,23 +13,23 @@
   }
 
   function moveToC4() {
-    location.href = '/C4/C4.html';
+    location.href = 'docs/C4/C4.html';
   }
 
   function moveToTTT() {
-    location.href = '/TTT/TTT.html';
+    location.href = 'docs/TTT/TTT.html';
   }
 
   function moveToLogs() {
-    location.href = '/log/log.html';
+    location.href = 'docs/log/log.html';
   }
 
   function moveToRiot() {
-    location.href = '/Riot/Riot.html';
+    location.href = 'docs/Riot/Riot.html';
   }
 
   function moveToClick() {
-    location.href = '/Click/Click.html';
+    location.href = 'docs/Click/Click.html';
   }
 
   function moveToMusic() {

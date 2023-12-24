@@ -6,6 +6,6 @@ const app = express();
 const DEFAULT_JS_LINTER_HATES_NUMBERS_PORT = 8000;
 
 app.use(express.urlencoded({extended: true}));
-app.use(express.static('docs'));
+app.use(express.static('Teosaka.github.io'));
 const PORT = process.env.PORT || DEFAULT_JS_LINTER_HATES_NUMBERS_PORT;
 app.listen(PORT);
