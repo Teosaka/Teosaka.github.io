@@ -33,7 +33,7 @@
   }
 
   function moveToMusic() {
-    location.href = '/Music/Music.html';
+    location.href = 'docs/Music/Music.html';
   }
 
 })();
